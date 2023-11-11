@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Video Conferencing and Chat</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="video-container">
+    <video id="local-video" autoplay muted></video>
+    <div id="remote-video-placeholder">Waiting for the user</div>
+    <video id="remote-video" autoplay></video>
+  </div>
+
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+    <button id="clear-chat-button">Clear Chat</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
